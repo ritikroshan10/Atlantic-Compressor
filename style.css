@@ -67,6 +67,21 @@ ul li a {
     background-color: #0C71C3;
     ;
 }
+/* tools */
+.icon-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle i{
+    font-size: 35px;
+    color: #8b0000;
+}
 
 /* -----------------------about----------------- */
 .about-row {
@@ -84,6 +99,10 @@ ul li a {
     outline: none;
     padding: 8px 15px;
     border-radius: 5px;
+}
+
+.mskimg {
+    clip-path: polygon(0 0, 71% 26%, 71% 75%, 0% 100%);
 }
 
 /* --------------------certificate------------------ */
@@ -170,7 +189,6 @@ ul li a {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.29);
-    height: 250px;
 }
 
 .hole i {
@@ -379,18 +397,9 @@ footer ul li a {
         padding-bottom: 0px;
     }
 
-    .test-cards {
-        height: 250px !important;
-    }
-
     .test-img {
         position: absolute;
         top: -30px;
-    }
-
-    .tools-img {
-        width: 90px;
-        height: 90px;
     }
 }
 
@@ -408,10 +417,6 @@ footer ul li a {
         border-radius: 5px;
     }
 
-    .test-cards {
-        height: 210px !important;
-    }
-
     .section-bg::before {
         clip-path: none;
     }
@@ -421,14 +426,14 @@ footer ul li a {
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .test-cards {
-        height: 300px;
-    }
-}
-
 @media screen and (max-width: 1400px) {
     .robort {
         padding: 15px 10px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .banner-bg {
+        background-size: 100% !important;
     }
 }
